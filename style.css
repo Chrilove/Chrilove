@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f585ea;
+}
+.card{
+    background-color: #0c4279;
+    box-shadow: inset 5px 5px 12px #e63a3a, 5px 5px 12px rgba(255, 5, 5, 0.16)
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-item: center;
+    flex-direction: column;
+}
+.kalkulator{
+    position: relative;
+    display: grid;
+}
+.kalkulator .value{
+    grid-column: span 4;
+    height: 80px;
+    width: 240px;
+    text-align: right;
+    border: rgb(253, 253, 252);
+    outline: rgb(254, 177, 240);
+    padding: 10px;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: 20px;
+}
+.kalkulator span{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #0c0c0c;
+    background: #e2a7e2;
+    place-items: center;
+    border: 1px solid rgba(11, 11, 11, 0.1);
+    border-radius: 30px;
+}
+.kalkulator span:active{
+    background: #fbfcfb;
+    color: #d547da;
+}
+.kalkulator span.clear{
+    grid-column: span 2 ;
+    width: 120px;
+    background: #ff3077;
+}
+.kalkulator span.plus{
+    grid-row: span 2;
+    height: 120px;
+}
+.kalkulator span.equal{
+    background: #03b1ff;
+}
